@@ -1,0 +1,781 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BBECEEE634E3121A2C8FA631 /* Pods_LoginFirebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 860EF3EB61CB9CC70F5B6D08 /* Pods_LoginFirebase.framework */; };
+		E80995B924BCCD1000B695AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80995B824BCCD1000B695AC /* AppDelegate.swift */; };
+		E80995BB24BCCD1000B695AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80995BA24BCCD1000B695AC /* SceneDelegate.swift */; };
+		E80995C224BCCD1100B695AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E80995C124BCCD1100B695AC /* Assets.xcassets */; };
+		E80995C524BCCD1100B695AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E80995C324BCCD1100B695AC /* LaunchScreen.storyboard */; };
+		E80995D024BCCD1100B695AC /* LoginFirebaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80995CF24BCCD1100B695AC /* LoginFirebaseTests.swift */; };
+		E80995DB24BCCD1100B695AC /* LoginFirebaseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80995DA24BCCD1100B695AC /* LoginFirebaseUITests.swift */; };
+		E80995E924BCCE1B00B695AC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80995E824BCCE1B00B695AC /* LoginViewController.swift */; };
+		E80995ED24BCCE3D00B695AC /* ViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80995EC24BCCE3D00B695AC /* ViewConfiguration.swift */; };
+		E8340CB324BCE05800231920 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E8340CB224BCE05800231920 /* GoogleService-Info.plist */; };
+		E8340CB724BCE16800231920 /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8340CB624BCE16800231920 /* TextFieldView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E80995CC24BCCD1100B695AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E80995AD24BCCD1000B695AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E80995B424BCCD1000B695AC;
+			remoteInfo = LoginFirebase;
+		};
+		E80995D724BCCD1100B695AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E80995AD24BCCD1000B695AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E80995B424BCCD1000B695AC;
+			remoteInfo = LoginFirebase;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		526579A50F1E158434DE4909 /* Pods-LoginFirebase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginFirebase.debug.xcconfig"; path = "Target Support Files/Pods-LoginFirebase/Pods-LoginFirebase.debug.xcconfig"; sourceTree = "<group>"; };
+		860EF3EB61CB9CC70F5B6D08 /* Pods_LoginFirebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoginFirebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5AE8C16BE1712FFDD746FFE /* Pods-LoginFirebase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginFirebase.release.xcconfig"; path = "Target Support Files/Pods-LoginFirebase/Pods-LoginFirebase.release.xcconfig"; sourceTree = "<group>"; };
+		E80995B524BCCD1000B695AC /* LoginFirebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginFirebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E80995B824BCCD1000B695AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E80995BA24BCCD1000B695AC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E80995C124BCCD1100B695AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E80995C424BCCD1100B695AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E80995C624BCCD1100B695AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E80995CB24BCCD1100B695AC /* LoginFirebaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoginFirebaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E80995CF24BCCD1100B695AC /* LoginFirebaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFirebaseTests.swift; sourceTree = "<group>"; };
+		E80995D124BCCD1100B695AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E80995D624BCCD1100B695AC /* LoginFirebaseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoginFirebaseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E80995DA24BCCD1100B695AC /* LoginFirebaseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFirebaseUITests.swift; sourceTree = "<group>"; };
+		E80995DC24BCCD1100B695AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E80995E824BCCE1B00B695AC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E80995EC24BCCE3D00B695AC /* ViewConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewConfiguration.swift; sourceTree = "<group>"; };
+		E80995F124BCD40F00B695AC /* libswiftIntents.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftIntents.dylib; path = ../../../../swiftStdLib/libswiftIntents.dylib; sourceTree = "<group>"; };
+		E80995F224BCD40F00B695AC /* libswiftDispatch.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftDispatch.dylib; path = ../../../../swiftStdLib/libswiftDispatch.dylib; sourceTree = "<group>"; };
+		E80995F324BCD40F00B695AC /* libswiftCoreLocation.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftCoreLocation.dylib; path = ../../../../swiftStdLib/libswiftCoreLocation.dylib; sourceTree = "<group>"; };
+		E80995F424BCD40F00B695AC /* libswiftModelIO.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftModelIO.dylib; path = ../../../../swiftStdLib/libswiftModelIO.dylib; sourceTree = "<group>"; };
+		E80995F524BCD40F00B695AC /* libswiftGLKit.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftGLKit.dylib; path = ../../../../swiftStdLib/libswiftGLKit.dylib; sourceTree = "<group>"; };
+		E80995F624BCD40F00B695AC /* libswiftMetalKit.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftMetalKit.dylib; path = ../../../../swiftStdLib/libswiftMetalKit.dylib; sourceTree = "<group>"; };
+		E80995F724BCD40F00B695AC /* libswiftContacts.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftContacts.dylib; path = ../../../../swiftStdLib/libswiftContacts.dylib; sourceTree = "<group>"; };
+		E80995F824BCD40F00B695AC /* libswiftNetwork.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftNetwork.dylib; path = ../../../../swiftStdLib/libswiftNetwork.dylib; sourceTree = "<group>"; };
+		E80995F924BCD40F00B695AC /* libswiftCallKit.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftCallKit.dylib; path = ../../../../swiftStdLib/libswiftCallKit.dylib; sourceTree = "<group>"; };
+		E80995FA24BCD40F00B695AC /* libswiftAVFoundation.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftAVFoundation.dylib; path = ../../../../swiftStdLib/libswiftAVFoundation.dylib; sourceTree = "<group>"; };
+		E80995FB24BCD40F00B695AC /* libswiftHomeKit.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftHomeKit.dylib; path = ../../../../swiftStdLib/libswiftHomeKit.dylib; sourceTree = "<group>"; };
+		E80995FC24BCD40F00B695AC /* libswiftSceneKit.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftSceneKit.dylib; path = ../../../../swiftStdLib/libswiftSceneKit.dylib; sourceTree = "<group>"; };
+		E80995FD24BCD40F00B695AC /* libswiftMapKit.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftMapKit.dylib; path = ../../../../swiftStdLib/libswiftMapKit.dylib; sourceTree = "<group>"; };
+		E80995FE24BCD40F00B695AC /* libswiftSpriteKit.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftSpriteKit.dylib; path = ../../../../swiftStdLib/libswiftSpriteKit.dylib; sourceTree = "<group>"; };
+		E80995FF24BCD40F00B695AC /* libswiftObjectiveC.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftObjectiveC.dylib; path = ../../../../swiftStdLib/libswiftObjectiveC.dylib; sourceTree = "<group>"; };
+		E809960024BCD40F00B695AC /* libswiftNaturalLanguage.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftNaturalLanguage.dylib; path = ../../../../swiftStdLib/libswiftNaturalLanguage.dylib; sourceTree = "<group>"; };
+		E809960124BCD40F00B695AC /* libswiftCoreFoundation.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftCoreFoundation.dylib; path = ../../../../swiftStdLib/libswiftCoreFoundation.dylib; sourceTree = "<group>"; };
+		E809960224BCD40F00B695AC /* libswiftAccelerate.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftAccelerate.dylib; path = ../../../../swiftStdLib/libswiftAccelerate.dylib; sourceTree = "<group>"; };
+		E809960324BCD40F00B695AC /* libswiftAssetsLibrary.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftAssetsLibrary.dylib; path = ../../../../swiftStdLib/libswiftAssetsLibrary.dylib; sourceTree = "<group>"; };
+		E809960424BCD40F00B695AC /* libswiftPhotos.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftPhotos.dylib; path = ../../../../swiftStdLib/libswiftPhotos.dylib; sourceTree = "<group>"; };
+		E809960524BCD40F00B695AC /* libswiftWatchKit.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftWatchKit.dylib; path = ../../../../swiftStdLib/libswiftWatchKit.dylib; sourceTree = "<group>"; };
+		E809960624BCD40F00B695AC /* libswiftFoundation.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftFoundation.dylib; path = ../../../../swiftStdLib/libswiftFoundation.dylib; sourceTree = "<group>"; };
+		E809960724BCD41000B695AC /* libswiftCoreImage.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftCoreImage.dylib; path = ../../../../swiftStdLib/libswiftCoreImage.dylib; sourceTree = "<group>"; };
+		E809960824BCD41000B695AC /* libswiftos.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftos.dylib; path = ../../../../swiftStdLib/libswiftos.dylib; sourceTree = "<group>"; };
+		E809960924BCD41000B695AC /* libswiftSwiftOnoneSupport.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftSwiftOnoneSupport.dylib; path = ../../../../swiftStdLib/libswiftSwiftOnoneSupport.dylib; sourceTree = "<group>"; };
+		E809960A24BCD41000B695AC /* libswiftMediaPlayer.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftMediaPlayer.dylib; path = ../../../../swiftStdLib/libswiftMediaPlayer.dylib; sourceTree = "<group>"; };
+		E809960B24BCD41000B695AC /* libswiftVision.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftVision.dylib; path = ../../../../swiftStdLib/libswiftVision.dylib; sourceTree = "<group>"; };
+		E809960C24BCD41000B695AC /* libswiftCoreData.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftCoreData.dylib; path = ../../../../swiftStdLib/libswiftCoreData.dylib; sourceTree = "<group>"; };
+		E809960D24BCD41000B695AC /* libswiftsimd.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftsimd.dylib; path = ../../../../swiftStdLib/libswiftsimd.dylib; sourceTree = "<group>"; };
+		E809960E24BCD41000B695AC /* libswiftCoreMedia.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftCoreMedia.dylib; path = ../../../../swiftStdLib/libswiftCoreMedia.dylib; sourceTree = "<group>"; };
+		E809960F24BCD41000B695AC /* libswiftMetal.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftMetal.dylib; path = ../../../../swiftStdLib/libswiftMetal.dylib; sourceTree = "<group>"; };
+		E809961024BCD41000B695AC /* libswiftARKit.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftARKit.dylib; path = ../../../../swiftStdLib/libswiftARKit.dylib; sourceTree = "<group>"; };
+		E809961124BCD41000B695AC /* libswiftCore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftCore.dylib; path = ../../../../swiftStdLib/libswiftCore.dylib; sourceTree = "<group>"; };
+		E809961224BCD41000B695AC /* libswiftGameplayKit.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftGameplayKit.dylib; path = ../../../../swiftStdLib/libswiftGameplayKit.dylib; sourceTree = "<group>"; };
+		E809961324BCD41000B695AC /* libswiftCoreAudio.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftCoreAudio.dylib; path = ../../../../swiftStdLib/libswiftCoreAudio.dylib; sourceTree = "<group>"; };
+		E809961424BCD41000B695AC /* libswiftDarwin.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftDarwin.dylib; path = ../../../../swiftStdLib/libswiftDarwin.dylib; sourceTree = "<group>"; };
+		E809961524BCD41000B695AC /* libswiftCoreGraphics.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftCoreGraphics.dylib; path = ../../../../swiftStdLib/libswiftCoreGraphics.dylib; sourceTree = "<group>"; };
+		E809961624BCD41000B695AC /* libswiftCloudKit.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftCloudKit.dylib; path = ../../../../swiftStdLib/libswiftCloudKit.dylib; sourceTree = "<group>"; };
+		E809961724BCD41000B695AC /* libswiftQuartzCore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftQuartzCore.dylib; path = ../../../../swiftStdLib/libswiftQuartzCore.dylib; sourceTree = "<group>"; };
+		E809961824BCD41000B695AC /* libswiftUIKit.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftUIKit.dylib; path = ../../../../swiftStdLib/libswiftUIKit.dylib; sourceTree = "<group>"; };
+		E809961924BCD41000B695AC /* libswiftXCTest.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftXCTest.dylib; path = ../../../../swiftStdLib/libswiftXCTest.dylib; sourceTree = "<group>"; };
+		E8340CB224BCE05800231920 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E8340CB624BCE16800231920 /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E80995B224BCCD1000B695AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBECEEE634E3121A2C8FA631 /* Pods_LoginFirebase.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E80995C824BCCD1100B695AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E80995D324BCCD1100B695AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		146FA1994D01CDFB1247CC10 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E809960224BCD40F00B695AC /* libswiftAccelerate.dylib */,
+				E809961024BCD41000B695AC /* libswiftARKit.dylib */,
+				E809960324BCD40F00B695AC /* libswiftAssetsLibrary.dylib */,
+				E80995FA24BCD40F00B695AC /* libswiftAVFoundation.dylib */,
+				E80995F924BCD40F00B695AC /* libswiftCallKit.dylib */,
+				E809961624BCD41000B695AC /* libswiftCloudKit.dylib */,
+				E80995F724BCD40F00B695AC /* libswiftContacts.dylib */,
+				E809961124BCD41000B695AC /* libswiftCore.dylib */,
+				E809961324BCD41000B695AC /* libswiftCoreAudio.dylib */,
+				E809960C24BCD41000B695AC /* libswiftCoreData.dylib */,
+				E809960124BCD40F00B695AC /* libswiftCoreFoundation.dylib */,
+				E809961524BCD41000B695AC /* libswiftCoreGraphics.dylib */,
+				E809960724BCD41000B695AC /* libswiftCoreImage.dylib */,
+				E80995F324BCD40F00B695AC /* libswiftCoreLocation.dylib */,
+				E809960E24BCD41000B695AC /* libswiftCoreMedia.dylib */,
+				E809961424BCD41000B695AC /* libswiftDarwin.dylib */,
+				E80995F224BCD40F00B695AC /* libswiftDispatch.dylib */,
+				E809960624BCD40F00B695AC /* libswiftFoundation.dylib */,
+				E809961224BCD41000B695AC /* libswiftGameplayKit.dylib */,
+				E80995F524BCD40F00B695AC /* libswiftGLKit.dylib */,
+				E80995FB24BCD40F00B695AC /* libswiftHomeKit.dylib */,
+				E80995F124BCD40F00B695AC /* libswiftIntents.dylib */,
+				E80995FD24BCD40F00B695AC /* libswiftMapKit.dylib */,
+				E809960A24BCD41000B695AC /* libswiftMediaPlayer.dylib */,
+				E809960F24BCD41000B695AC /* libswiftMetal.dylib */,
+				E80995F624BCD40F00B695AC /* libswiftMetalKit.dylib */,
+				E80995F424BCD40F00B695AC /* libswiftModelIO.dylib */,
+				E809960024BCD40F00B695AC /* libswiftNaturalLanguage.dylib */,
+				E80995F824BCD40F00B695AC /* libswiftNetwork.dylib */,
+				E80995FF24BCD40F00B695AC /* libswiftObjectiveC.dylib */,
+				E809960824BCD41000B695AC /* libswiftos.dylib */,
+				E809960424BCD40F00B695AC /* libswiftPhotos.dylib */,
+				E809961724BCD41000B695AC /* libswiftQuartzCore.dylib */,
+				E80995FC24BCD40F00B695AC /* libswiftSceneKit.dylib */,
+				E809960D24BCD41000B695AC /* libswiftsimd.dylib */,
+				E80995FE24BCD40F00B695AC /* libswiftSpriteKit.dylib */,
+				E809960924BCD41000B695AC /* libswiftSwiftOnoneSupport.dylib */,
+				E809961824BCD41000B695AC /* libswiftUIKit.dylib */,
+				E809960B24BCD41000B695AC /* libswiftVision.dylib */,
+				E809960524BCD40F00B695AC /* libswiftWatchKit.dylib */,
+				E809961924BCD41000B695AC /* libswiftXCTest.dylib */,
+				860EF3EB61CB9CC70F5B6D08 /* Pods_LoginFirebase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7ADCCF9DD6E8D6D3D3F77442 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				526579A50F1E158434DE4909 /* Pods-LoginFirebase.debug.xcconfig */,
+				E5AE8C16BE1712FFDD746FFE /* Pods-LoginFirebase.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E80995AC24BCCD1000B695AC = {
+			isa = PBXGroup;
+			children = (
+				E80995B724BCCD1000B695AC /* LoginFirebase */,
+				E80995CE24BCCD1100B695AC /* LoginFirebaseTests */,
+				E80995D924BCCD1100B695AC /* LoginFirebaseUITests */,
+				E80995B624BCCD1000B695AC /* Products */,
+				7ADCCF9DD6E8D6D3D3F77442 /* Pods */,
+				146FA1994D01CDFB1247CC10 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E80995B624BCCD1000B695AC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E80995B524BCCD1000B695AC /* LoginFirebase.app */,
+				E80995CB24BCCD1100B695AC /* LoginFirebaseTests.xctest */,
+				E80995D624BCCD1100B695AC /* LoginFirebaseUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E80995B724BCCD1000B695AC /* LoginFirebase */ = {
+			isa = PBXGroup;
+			children = (
+				E80995EB24BCCE2F00B695AC /* Util */,
+				E80995EA24BCCE1E00B695AC /* View */,
+				E80995B824BCCD1000B695AC /* AppDelegate.swift */,
+				E80995BA24BCCD1000B695AC /* SceneDelegate.swift */,
+				E80995C124BCCD1100B695AC /* Assets.xcassets */,
+				E80995C324BCCD1100B695AC /* LaunchScreen.storyboard */,
+				E8340CB224BCE05800231920 /* GoogleService-Info.plist */,
+				E80995C624BCCD1100B695AC /* Info.plist */,
+			);
+			path = LoginFirebase;
+			sourceTree = "<group>";
+		};
+		E80995CE24BCCD1100B695AC /* LoginFirebaseTests */ = {
+			isa = PBXGroup;
+			children = (
+				E80995CF24BCCD1100B695AC /* LoginFirebaseTests.swift */,
+				E80995D124BCCD1100B695AC /* Info.plist */,
+			);
+			path = LoginFirebaseTests;
+			sourceTree = "<group>";
+		};
+		E80995D924BCCD1100B695AC /* LoginFirebaseUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E80995DA24BCCD1100B695AC /* LoginFirebaseUITests.swift */,
+				E80995DC24BCCD1100B695AC /* Info.plist */,
+			);
+			path = LoginFirebaseUITests;
+			sourceTree = "<group>";
+		};
+		E80995EA24BCCE1E00B695AC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E8340CB424BCE14700231920 /* Login */,
+				E8340CB524BCE15000231920 /* Components */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E80995EB24BCCE2F00B695AC /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				E80995EC24BCCE3D00B695AC /* ViewConfiguration.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		E8340CB424BCE14700231920 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				E80995E824BCCE1B00B695AC /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		E8340CB524BCE15000231920 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				E8340CB624BCE16800231920 /* TextFieldView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E80995B424BCCD1000B695AC /* LoginFirebase */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E80995DF24BCCD1100B695AC /* Build configuration list for PBXNativeTarget "LoginFirebase" */;
+			buildPhases = (
+				201C13741D08611AD6D3E21A /* [CP] Check Pods Manifest.lock */,
+				E80995B124BCCD1000B695AC /* Sources */,
+				E80995B224BCCD1000B695AC /* Frameworks */,
+				E80995B324BCCD1000B695AC /* Resources */,
+				4980C321A081F565542ECDB3 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LoginFirebase;
+			productName = LoginFirebase;
+			productReference = E80995B524BCCD1000B695AC /* LoginFirebase.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E80995CA24BCCD1100B695AC /* LoginFirebaseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E80995E224BCCD1100B695AC /* Build configuration list for PBXNativeTarget "LoginFirebaseTests" */;
+			buildPhases = (
+				E80995C724BCCD1100B695AC /* Sources */,
+				E80995C824BCCD1100B695AC /* Frameworks */,
+				E80995C924BCCD1100B695AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E80995CD24BCCD1100B695AC /* PBXTargetDependency */,
+			);
+			name = LoginFirebaseTests;
+			productName = LoginFirebaseTests;
+			productReference = E80995CB24BCCD1100B695AC /* LoginFirebaseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E80995D524BCCD1100B695AC /* LoginFirebaseUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E80995E524BCCD1100B695AC /* Build configuration list for PBXNativeTarget "LoginFirebaseUITests" */;
+			buildPhases = (
+				E80995D224BCCD1100B695AC /* Sources */,
+				E80995D324BCCD1100B695AC /* Frameworks */,
+				E80995D424BCCD1100B695AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E80995D824BCCD1100B695AC /* PBXTargetDependency */,
+			);
+			name = LoginFirebaseUITests;
+			productName = LoginFirebaseUITests;
+			productReference = E80995D624BCCD1100B695AC /* LoginFirebaseUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E80995AD24BCCD1000B695AC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "João Luis Santos";
+				TargetAttributes = {
+					E80995B424BCCD1000B695AC = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					E80995CA24BCCD1100B695AC = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = E80995B424BCCD1000B695AC;
+					};
+					E80995D524BCCD1100B695AC = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = E80995B424BCCD1000B695AC;
+					};
+				};
+			};
+			buildConfigurationList = E80995B024BCCD1000B695AC /* Build configuration list for PBXProject "LoginFirebase" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E80995AC24BCCD1000B695AC;
+			productRefGroup = E80995B624BCCD1000B695AC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E80995B424BCCD1000B695AC /* LoginFirebase */,
+				E80995CA24BCCD1100B695AC /* LoginFirebaseTests */,
+				E80995D524BCCD1100B695AC /* LoginFirebaseUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E80995B324BCCD1000B695AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E80995C524BCCD1100B695AC /* LaunchScreen.storyboard in Resources */,
+				E80995C224BCCD1100B695AC /* Assets.xcassets in Resources */,
+				E8340CB324BCE05800231920 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E80995C924BCCD1100B695AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E80995D424BCCD1100B695AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		201C13741D08611AD6D3E21A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LoginFirebase-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4980C321A081F565542ECDB3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LoginFirebase/Pods-LoginFirebase-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LoginFirebase/Pods-LoginFirebase-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LoginFirebase/Pods-LoginFirebase-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E80995B124BCCD1000B695AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E80995E924BCCE1B00B695AC /* LoginViewController.swift in Sources */,
+				E8340CB724BCE16800231920 /* TextFieldView.swift in Sources */,
+				E80995ED24BCCE3D00B695AC /* ViewConfiguration.swift in Sources */,
+				E80995B924BCCD1000B695AC /* AppDelegate.swift in Sources */,
+				E80995BB24BCCD1000B695AC /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E80995C724BCCD1100B695AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E80995D024BCCD1100B695AC /* LoginFirebaseTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E80995D224BCCD1100B695AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E80995DB24BCCD1100B695AC /* LoginFirebaseUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E80995CD24BCCD1100B695AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E80995B424BCCD1000B695AC /* LoginFirebase */;
+			targetProxy = E80995CC24BCCD1100B695AC /* PBXContainerItemProxy */;
+		};
+		E80995D824BCCD1100B695AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E80995B424BCCD1000B695AC /* LoginFirebase */;
+			targetProxy = E80995D724BCCD1100B695AC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E80995C324BCCD1100B695AC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E80995C424BCCD1100B695AC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E80995DD24BCCD1100B695AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E80995DE24BCCD1100B695AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E80995E024BCCD1100B695AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 526579A50F1E158434DE4909 /* Pods-LoginFirebase.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4FGAJ25MKJ;
+				INFOPLIST_FILE = LoginFirebase/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.joao.LoginFirebase;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E80995E124BCCD1100B695AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5AE8C16BE1712FFDD746FFE /* Pods-LoginFirebase.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4FGAJ25MKJ;
+				INFOPLIST_FILE = LoginFirebase/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.joao.LoginFirebase;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E80995E324BCCD1100B695AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4FGAJ25MKJ;
+				INFOPLIST_FILE = LoginFirebaseTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.joao.LoginFirebaseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LoginFirebase.app/LoginFirebase";
+			};
+			name = Debug;
+		};
+		E80995E424BCCD1100B695AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4FGAJ25MKJ;
+				INFOPLIST_FILE = LoginFirebaseTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.joao.LoginFirebaseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LoginFirebase.app/LoginFirebase";
+			};
+			name = Release;
+		};
+		E80995E624BCCD1100B695AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4FGAJ25MKJ;
+				INFOPLIST_FILE = LoginFirebaseUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.joao.LoginFirebaseUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LoginFirebase;
+			};
+			name = Debug;
+		};
+		E80995E724BCCD1100B695AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4FGAJ25MKJ;
+				INFOPLIST_FILE = LoginFirebaseUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.joao.LoginFirebaseUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LoginFirebase;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E80995B024BCCD1000B695AC /* Build configuration list for PBXProject "LoginFirebase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E80995DD24BCCD1100B695AC /* Debug */,
+				E80995DE24BCCD1100B695AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E80995DF24BCCD1100B695AC /* Build configuration list for PBXNativeTarget "LoginFirebase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E80995E024BCCD1100B695AC /* Debug */,
+				E80995E124BCCD1100B695AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E80995E224BCCD1100B695AC /* Build configuration list for PBXNativeTarget "LoginFirebaseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E80995E324BCCD1100B695AC /* Debug */,
+				E80995E424BCCD1100B695AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E80995E524BCCD1100B695AC /* Build configuration list for PBXNativeTarget "LoginFirebaseUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E80995E624BCCD1100B695AC /* Debug */,
+				E80995E724BCCD1100B695AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E80995AD24BCCD1000B695AC /* Project object */;
+}
