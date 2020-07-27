@@ -13,33 +13,17 @@ class TextFieldView: UIView {
     
     // MARK: - Properties
     
-    private lazy var iconView: UIImageView = {
-        let view = UIImageView()
-        return view
-    }()
-    
+    private let view = UIView()
+    private let iconView = UIImageView()
     private lazy var imageIcon: UIImage = {
         let image = UIImage()
         return image
     }()
-    
-    private lazy var imageBackGroundView: UIImageView = {
-        let view = UIImageView()
-        return view
-    }()
-    
-    private lazy var imageBackGround: UIImage = {
-        let image = UIImage()
-        return image
-    }()
-    
     private lazy var textField: UITextField = {
         let tf = UITextField()
         return tf
     }()
-    
     private var placeHolder = ""
-    
     private var secure = false
     
     // MARK: - Init
@@ -62,35 +46,28 @@ class TextFieldView: UIView {
 extension TextFieldView: ViewConfiguration {
     func buildView() {
         sv(
-            imageBackGroundView,
+            view,
             iconView,
             textField
         )
     }
     
     func addConstraint() {
-        imageBackGroundView.fillContainer()
+        view.fillContainer().height(60)
         layout(
             iconView.left(22).centerVertically().size(24)-8-textField-12-|
         )
-        
-        
     }
     
     func additionalConfiguration() {
-        imageBackGround = #imageLiteral(resourceName: "brush_green")
-        
-        imageBackGroundView.image = imageBackGround
-        
-        layer.cornerRadius = 30.0
-        
+        view.backgroundColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.5108109595)
+        view.layer.cornerRadius = 18
         iconView.image = imageIcon
-        
         textField.placeholder = placeHolder
         textField.textColor = .white
         textField.attributedPlaceholder = NSAttributedString(string: placeHolder, attributes: [NSAttributedString.Key.foregroundColor: UIColor.white])
         textField.isSecureTextEntry = secure
+        textField.autocapitalizationType = .none
     }
-    
     
 }

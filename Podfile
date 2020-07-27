@@ -10,6 +10,8 @@ target 'LoginFirebase' do
 	pod 'Firebase/Database'
 	pod 'Firebase/Storage'
 	pod 'Firebase/Auth'
+  pod 'GoogleSignIn'
   pod 'SteviaLayout'
+  pod 'SDWebImage'
 
 end

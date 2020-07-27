@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BBECEEE634E3121A2C8FA631 /* Pods_LoginFirebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 860EF3EB61CB9CC70F5B6D08 /* Pods_LoginFirebase.framework */; };
+		E809649E24C65DAA00B0C186 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E809649D24C65DAA00B0C186 /* LoginViewModel.swift */; };
 		E80995B924BCCD1000B695AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80995B824BCCD1000B695AC /* AppDelegate.swift */; };
 		E80995BB24BCCD1000B695AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80995BA24BCCD1000B695AC /* SceneDelegate.swift */; };
 		E80995C224BCCD1100B695AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E80995C124BCCD1100B695AC /* Assets.xcassets */; };
@@ -16,8 +17,18 @@
 		E80995DB24BCCD1100B695AC /* LoginFirebaseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80995DA24BCCD1100B695AC /* LoginFirebaseUITests.swift */; };
 		E80995E924BCCE1B00B695AC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80995E824BCCE1B00B695AC /* LoginViewController.swift */; };
 		E80995ED24BCCE3D00B695AC /* ViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80995EC24BCCE3D00B695AC /* ViewConfiguration.swift */; };
+		E80BFA2B24BE1D8800468D48 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80BFA2A24BE1D8800468D48 /* RegistrationViewModel.swift */; };
+		E80BFA2D24BE28AE00468D48 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80BFA2C24BE28AE00468D48 /* Constants.swift */; };
+		E80BFA3024BE389900468D48 /* AuthFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80BFA2F24BE389900468D48 /* AuthFirebase.swift */; };
 		E8340CB324BCE05800231920 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E8340CB224BCE05800231920 /* GoogleService-Info.plist */; };
 		E8340CB724BCE16800231920 /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8340CB624BCE16800231920 /* TextFieldView.swift */; };
+		E834CC5A24C7647F00BE8672 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = E834CC5924C7647F00BE8672 /* Alert.swift */; };
+		E83EEB8724C880CC0042CB97 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83EEB8624C880CC0042CB97 /* UserService.swift */; };
+		E83EEB8C24C8D7F80042CB97 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83EEB8B24C8D7F80042CB97 /* User.swift */; };
+		E853D7B924C3A92D0033D279 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E853D7B824C3A92D0033D279 /* MainViewController.swift */; };
+		E853D7BC24C3AAE70033D279 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E853D7BB24C3AAE70033D279 /* MainViewModel.swift */; };
+		E8C3FC9B24BD15E800B6DBE7 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C3FC9A24BD15E800B6DBE7 /* RegistrationViewController.swift */; };
+		E8C3FC9D24BD292B00B6DBE7 /* CustomButtom.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C3FC9C24BD292B00B6DBE7 /* CustomButtom.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +52,7 @@
 		526579A50F1E158434DE4909 /* Pods-LoginFirebase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginFirebase.debug.xcconfig"; path = "Target Support Files/Pods-LoginFirebase/Pods-LoginFirebase.debug.xcconfig"; sourceTree = "<group>"; };
 		860EF3EB61CB9CC70F5B6D08 /* Pods_LoginFirebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoginFirebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5AE8C16BE1712FFDD746FFE /* Pods-LoginFirebase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginFirebase.release.xcconfig"; path = "Target Support Files/Pods-LoginFirebase/Pods-LoginFirebase.release.xcconfig"; sourceTree = "<group>"; };
+		E809649D24C65DAA00B0C186 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		E80995B524BCCD1000B695AC /* LoginFirebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginFirebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E80995B824BCCD1000B695AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E80995BA24BCCD1000B695AC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -96,8 +108,18 @@
 		E809961724BCD41000B695AC /* libswiftQuartzCore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftQuartzCore.dylib; path = ../../../../swiftStdLib/libswiftQuartzCore.dylib; sourceTree = "<group>"; };
 		E809961824BCD41000B695AC /* libswiftUIKit.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftUIKit.dylib; path = ../../../../swiftStdLib/libswiftUIKit.dylib; sourceTree = "<group>"; };
 		E809961924BCD41000B695AC /* libswiftXCTest.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftXCTest.dylib; path = ../../../../swiftStdLib/libswiftXCTest.dylib; sourceTree = "<group>"; };
+		E80BFA2A24BE1D8800468D48 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
+		E80BFA2C24BE28AE00468D48 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		E80BFA2F24BE389900468D48 /* AuthFirebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthFirebase.swift; sourceTree = "<group>"; };
 		E8340CB224BCE05800231920 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E8340CB624BCE16800231920 /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
+		E834CC5924C7647F00BE8672 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		E83EEB8624C880CC0042CB97 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		E83EEB8B24C8D7F80042CB97 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E853D7B824C3A92D0033D279 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		E853D7BB24C3AAE70033D279 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		E8C3FC9A24BD15E800B6DBE7 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		E8C3FC9C24BD292B00B6DBE7 /* CustomButtom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtom.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +206,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		E809649C24C65D9B00B0C186 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E809649D24C65DAA00B0C186 /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		E80995AC24BCCD1000B695AC = {
 			isa = PBXGroup;
 			children = (
@@ -209,8 +239,10 @@
 		E80995B724BCCD1000B695AC /* LoginFirebase */ = {
 			isa = PBXGroup;
 			children = (
-				E80995EB24BCCE2F00B695AC /* Util */,
+				E83EEB8A24C8D7ED0042CB97 /* Model */,
 				E80995EA24BCCE1E00B695AC /* View */,
+				E80995EB24BCCE2F00B695AC /* Util */,
+				E80BFA2E24BE388900468D48 /* Service */,
 				E80995B824BCCD1000B695AC /* AppDelegate.swift */,
 				E80995BA24BCCD1000B695AC /* SceneDelegate.swift */,
 				E80995C124BCCD1100B695AC /* Assets.xcassets */,
@@ -242,7 +274,9 @@
 		E80995EA24BCCE1E00B695AC /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E853D7B724C3A90E0033D279 /* Main */,
 				E8340CB424BCE14700231920 /* Login */,
+				E8C3FC9924BD15BA00B6DBE7 /* Registration */,
 				E8340CB524BCE15000231920 /* Components */,
 			);
 			path = View;
@@ -252,14 +286,33 @@
 			isa = PBXGroup;
 			children = (
 				E80995EC24BCCE3D00B695AC /* ViewConfiguration.swift */,
+				E80BFA2C24BE28AE00468D48 /* Constants.swift */,
 			);
 			path = Util;
+			sourceTree = "<group>";
+		};
+		E80BFA2924BE1D7100468D48 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E80BFA2A24BE1D8800468D48 /* RegistrationViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E80BFA2E24BE388900468D48 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				E80BFA2F24BE389900468D48 /* AuthFirebase.swift */,
+				E83EEB8624C880CC0042CB97 /* UserService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 		E8340CB424BCE14700231920 /* Login */ = {
 			isa = PBXGroup;
 			children = (
 				E80995E824BCCE1B00B695AC /* LoginViewController.swift */,
+				E809649C24C65D9B00B0C186 /* ViewModel */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -268,8 +321,44 @@
 			isa = PBXGroup;
 			children = (
 				E8340CB624BCE16800231920 /* TextFieldView.swift */,
+				E8C3FC9C24BD292B00B6DBE7 /* CustomButtom.swift */,
+				E834CC5924C7647F00BE8672 /* Alert.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		E83EEB8A24C8D7ED0042CB97 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E83EEB8B24C8D7F80042CB97 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E853D7B724C3A90E0033D279 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				E853D7B824C3A92D0033D279 /* MainViewController.swift */,
+				E853D7BA24C3AAD50033D279 /* ViewModel */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		E853D7BA24C3AAD50033D279 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E853D7BB24C3AAE70033D279 /* MainViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E8C3FC9924BD15BA00B6DBE7 /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				E8C3FC9A24BD15E800B6DBE7 /* RegistrationViewController.swift */,
+				E80BFA2924BE1D7100468D48 /* ViewModel */,
+			);
+			path = Registration;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,6 +373,7 @@
 				E80995B224BCCD1000B695AC /* Frameworks */,
 				E80995B324BCCD1000B695AC /* Resources */,
 				4980C321A081F565542ECDB3 /* [CP] Embed Pods Frameworks */,
+				C3D98C48FB9D7BD5846B7212 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -425,7 +515,7 @@
 		};
 		4980C321A081F565542ECDB3 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			files = (
 			);
 			inputFileListPaths = (
@@ -440,6 +530,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LoginFirebase/Pods-LoginFirebase-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		C3D98C48FB9D7BD5846B7212 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LoginFirebase/Pods-LoginFirebase-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LoginFirebase/Pods-LoginFirebase-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LoginFirebase/Pods-LoginFirebase-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -447,11 +554,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8C3FC9B24BD15E800B6DBE7 /* RegistrationViewController.swift in Sources */,
+				E853D7B924C3A92D0033D279 /* MainViewController.swift in Sources */,
 				E80995E924BCCE1B00B695AC /* LoginViewController.swift in Sources */,
 				E8340CB724BCE16800231920 /* TextFieldView.swift in Sources */,
+				E83EEB8C24C8D7F80042CB97 /* User.swift in Sources */,
 				E80995ED24BCCE3D00B695AC /* ViewConfiguration.swift in Sources */,
 				E80995B924BCCD1000B695AC /* AppDelegate.swift in Sources */,
+				E834CC5A24C7647F00BE8672 /* Alert.swift in Sources */,
+				E80BFA2B24BE1D8800468D48 /* RegistrationViewModel.swift in Sources */,
 				E80995BB24BCCD1000B695AC /* SceneDelegate.swift in Sources */,
+				E809649E24C65DAA00B0C186 /* LoginViewModel.swift in Sources */,
+				E80BFA3024BE389900468D48 /* AuthFirebase.swift in Sources */,
+				E83EEB8724C880CC0042CB97 /* UserService.swift in Sources */,
+				E8C3FC9D24BD292B00B6DBE7 /* CustomButtom.swift in Sources */,
+				E80BFA2D24BE28AE00468D48 /* Constants.swift in Sources */,
+				E853D7BC24C3AAE70033D279 /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
