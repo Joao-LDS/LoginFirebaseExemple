@@ -9,24 +9,15 @@
 import UIKit
 import Stevia
 
-protocol AlertDelegate {
-    func dismissAlert()
-}
-
 class Alert: UIView {
     
-    var delegate: AlertDelegate?
-    private let labelTitle = UILabel()
-    private let labelMessage = UILabel()
+    let labelTitle = UILabel()
+    let labelMessage = UILabel()
     private let line = UIView()
     private let button = UIButton(type: .system)
-    private var title = ""
-    private var message = ""
     
-    init(title: String, message: String) {
+    init() {
         super.init(frame: .zero)
-        self.title = title
-        self.message = message
         setupView()
     }
     
@@ -34,8 +25,14 @@ class Alert: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
+    func configureShowAlert(view: UIView) {
+        view.sv(self)
+        width(70%).height(20%).centerInContainer()
+        Animation().animationToPresent(view: self)
+    }
+    
     @objc func dismiss() {
-        delegate?.dismissAlert()
+        Animation().animationToDismiss(view: self)
     }
     
 }
@@ -54,9 +51,9 @@ extension Alert: ViewConfiguration {
         layout(
             16,
             labelTitle.centerHorizontally(),
-            "",
+            16,
             |-labelMessage-|,
-            12,
+            "",
             |-line.height(1)-|,
             |-button.height(50)-|,
             0
@@ -66,10 +63,8 @@ extension Alert: ViewConfiguration {
     func additionalConfiguration() {
         backgroundColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.8033945863)
         layer.cornerRadius = 10
-        labelTitle.text = title
         labelTitle.textColor = .white
         labelTitle.font = UIFont.boldSystemFont(ofSize: 18)
-        labelMessage.text = message
         labelMessage.numberOfLines = 0
         labelMessage.textAlignment = .center
         labelMessage.textColor = .white

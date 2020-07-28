@@ -19,10 +19,12 @@ class MainViewController: UIViewController {
     private let usernameLabel = UILabel()
     private let button = CustomButtom(title: "Log out")
     private let viewModel = MainViewModel()
+    private let spinner = UIActivityIndicatorView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         viewModel.delegate = self
+        self.configureActivity(on: true)
         viewModel.authenticateUser { sucess in
             if sucess {
                 self.viewModel.fetchUser()
@@ -35,10 +37,22 @@ class MainViewController: UIViewController {
         viewModel.logoutUser()
     }
     
+    func configureActivity(on: Bool) {
+        if on {
+            spinner.startAnimating()
+            view.sv(spinner)
+            spinner.centerInContainer()
+        } else {
+            spinner.stopAnimating()
+            spinner.removeFromSuperview()
+        }
+    }
+    
 }
 
 extension MainViewController: MainViewModelDelegate {
     func configureUIWithUser(_ user: User) {
+        self.configureActivity(on: false)
         fullnameLabel.text = "Full name: \(user.fullname)"
         emailLabel.text = "Email: \(user.email)"
         usernameLabel.text = "Username: \(user.username)"
@@ -85,11 +99,11 @@ extension MainViewController: ViewConfiguration {
         stack.distribution = .fillEqually
         stack.axis = .vertical
         stack.spacing = 10
-        fullnameLabel.text = "Please wait..."
         fullnameLabel.textColor = #colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)
         emailLabel.textColor = #colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)
         usernameLabel.textColor = #colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)
         button.addTarget(self, action: #selector(handleButton), for: .touchUpInside)
+        spinner.style = .gray
     }
     
 }

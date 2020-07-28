@@ -20,6 +20,7 @@
 		E80BFA2B24BE1D8800468D48 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80BFA2A24BE1D8800468D48 /* RegistrationViewModel.swift */; };
 		E80BFA2D24BE28AE00468D48 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80BFA2C24BE28AE00468D48 /* Constants.swift */; };
 		E80BFA3024BE389900468D48 /* AuthFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80BFA2F24BE389900468D48 /* AuthFirebase.swift */; };
+		E830EEA624D0BB3D000E6BE2 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E830EEA524D0BB3D000E6BE2 /* Animation.swift */; };
 		E8340CB324BCE05800231920 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E8340CB224BCE05800231920 /* GoogleService-Info.plist */; };
 		E8340CB724BCE16800231920 /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8340CB624BCE16800231920 /* TextFieldView.swift */; };
 		E834CC5A24C7647F00BE8672 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = E834CC5924C7647F00BE8672 /* Alert.swift */; };
@@ -111,6 +112,7 @@
 		E80BFA2A24BE1D8800468D48 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		E80BFA2C24BE28AE00468D48 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		E80BFA2F24BE389900468D48 /* AuthFirebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthFirebase.swift; sourceTree = "<group>"; };
+		E830EEA524D0BB3D000E6BE2 /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
 		E8340CB224BCE05800231920 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E8340CB624BCE16800231920 /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
 		E834CC5924C7647F00BE8672 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
@@ -323,6 +325,7 @@
 				E8340CB624BCE16800231920 /* TextFieldView.swift */,
 				E8C3FC9C24BD292B00B6DBE7 /* CustomButtom.swift */,
 				E834CC5924C7647F00BE8672 /* Alert.swift */,
+				E830EEA524D0BB3D000E6BE2 /* Animation.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -557,6 +560,7 @@
 				E8C3FC9B24BD15E800B6DBE7 /* RegistrationViewController.swift in Sources */,
 				E853D7B924C3A92D0033D279 /* MainViewController.swift in Sources */,
 				E80995E924BCCE1B00B695AC /* LoginViewController.swift in Sources */,
+				E830EEA624D0BB3D000E6BE2 /* Animation.swift in Sources */,
 				E8340CB724BCE16800231920 /* TextFieldView.swift in Sources */,
 				E83EEB8C24C8D7F80042CB97 /* User.swift in Sources */,
 				E80995ED24BCCE3D00B695AC /* ViewConfiguration.swift in Sources */,

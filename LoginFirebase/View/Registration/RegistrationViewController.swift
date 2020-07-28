@@ -28,6 +28,9 @@ class RegistrationViewController: UIViewController {
     private lazy var usernameView = TextFieldView(image: #imageLiteral(resourceName: "ic_person_outline_white_2x"), textField: self.usernameTextField, placeHolder: "Username")
     private let buttonSignUp: UIButton = CustomButtom(title: "Sign Up")
     private let alreadyHaveAnAccountButton = UIButton()
+    private let effectView = UIVisualEffectView()
+    private let spinner = UIActivityIndicatorView()
+    private let alert = Alert()
 
     // MARK: - View Lifecycle
     
@@ -51,6 +54,7 @@ class RegistrationViewController: UIViewController {
         guard let password = passwordTextField.text else { return }
         guard let fullname = fullnameTextField.text else { return }
         guard let username = usernameTextField.text else { return }
+        configureBlurEffect(on: true)
         viewModel.registerUser(email, password, fullname, username, profileImage)
     }
     
@@ -65,7 +69,7 @@ class RegistrationViewController: UIViewController {
         addPhotoButton.layer.borderColor = #colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)
         addPhotoButton.layer.borderWidth = 2
     }
-
+    
 }
 
 extension RegistrationViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
@@ -78,13 +82,33 @@ extension RegistrationViewController: UIImagePickerControllerDelegate, UINavigat
 }
 
 extension RegistrationViewController: RegistrationViewModelDelegate {
-    func presentAlert() {
-        let alert = UIAlertController(title: "Yeeep", message: "Verify you email please =)", preferredStyle: .alert)
-        let ok = UIAlertAction(title: "OK", style: .cancel) { _ in
-            self.dismiss(animated: true, completion: nil)
+    func showAlert(title: String, message: String) {
+        alert.labelTitle.text = title
+        alert.labelMessage.text = message
+        alert.configureShowAlert(view: self.view)
+    }
+    
+    func configureActivity(on: Bool) {
+        if on {
+            spinner.startAnimating()
+            view.sv(spinner)
+            spinner.centerInContainer()
+        } else {
+            spinner.stopAnimating()
+            spinner.removeFromSuperview()
         }
-        alert.addAction(ok)
-        present(alert, animated: true, completion: nil)
+    }
+    
+    func configureBlurEffect(on: Bool) {
+        if on {
+            view.sv(effectView)
+            effectView.fillContainer()
+            Animation().animationToPresent(view: effectView)
+            configureActivity(on: true)
+        } else {
+            configureActivity(on: false)
+            Animation().animationToDismiss(view: effectView)
+        }
     }
 }
 
@@ -129,6 +153,8 @@ extension RegistrationViewController: ViewConfiguration {
         buttonSignUp.addTarget(self, action: #selector(handleSignUp), for: .touchUpInside)
         alreadyHaveAnAccountButton.setTitle("Already have an account? Log In", for: .normal)
         alreadyHaveAnAccountButton.addTarget(self, action: #selector(handleHaveAnAccount), for: .touchUpInside)
+        spinner.style = .whiteLarge
+        effectView.effect = UIBlurEffect(style: .dark)
     }
     
     

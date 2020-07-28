@@ -10,6 +10,7 @@ import Foundation
 
 protocol LoginViewModelDelegate {
     func presentMainView()
+    func showAlert(title: String, message: String)
 }
 
 class LoginViewModel {
@@ -20,11 +21,20 @@ class LoginViewModel {
     
     func logUserIn(withEmail email: String, password: String) {
         AuthFirebase().logUserIn(withEmail: email, password: password) { result, error in
+            if result?.user.isEmailVerified == false {
+                self.delegate?.showAlert(title: "Error", message: "Your email is not verified.")
+                return
+            }
             if let error = error {
                 print("ERROR: \(error.localizedDescription)")
+                self.delegate?.showAlert(title: "Error", message: error.localizedDescription)
                 return
             }
             self.delegate?.presentMainView()
         }
+    }
+    
+    func resetPassword() {
+        AuthFirebase().resetPassword()
     }
 }

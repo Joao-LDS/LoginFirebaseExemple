@@ -10,7 +10,8 @@ import UIKit
 import Firebase
 
 protocol RegistrationViewModelDelegate {
-    func presentAlert()
+    func showAlert(title: String, message: String)
+    func configureBlurEffect(on: Bool)
 }
 
 struct RegistrationViewModel {
@@ -19,8 +20,14 @@ struct RegistrationViewModel {
     
     func registerUser(_ email: String,_ password: String,_ fullname: String,_ username: String,_ image: UIImage) {
         AuthFirebase().registerUser(email, password, fullname, username, image) { error, ref in
+            if let error = error {
+                self.delegate?.configureBlurEffect(on: false)
+                self.delegate?.showAlert(title: "Error", message: error.localizedDescription)
+                return
+            }
             print("Sign up sucessful")
-            self.delegate?.presentAlert()
+            self.delegate?.configureBlurEffect(on: false)
+            self.delegate?.showAlert(title: "Congratulations", message: "Sucessful registration! Verify your email.")
         }
     }
 }

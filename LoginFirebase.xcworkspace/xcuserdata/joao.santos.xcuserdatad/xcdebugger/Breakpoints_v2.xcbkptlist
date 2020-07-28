@@ -14,8 +14,8 @@
             filePath = "LoginFirebase/View/Registration/RegistrationViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
             landmarkName = "handleSignUp()"
             landmarkType = "7">
          </BreakpointContent>
@@ -96,38 +96,6 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "53"
             endingLineNumber = "53">
-            <Locations>
-               <Location
-                  uuid = "D53FFF2E-C6D6-40EE-8A47-9D0BFD972D2A - 930e76648202e96d"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "LoginFirebase.MainViewModel.fetchUser() -&gt; ()"
-                  moduleName = "LoginFirebase"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/joao.santos/Documents/Projects/LoginFirebaseExemple/LoginFirebaseExemple/LoginFirebase/View/Main/ViewModel/MainViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "53"
-                  endingLineNumber = "53"
-                  offsetFromSymbolStart = "30">
-               </Location>
-               <Location
-                  uuid = "D53FFF2E-C6D6-40EE-8A47-9D0BFD972D2A - 889b849d7f7ca368"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (LoginFirebase.User) -&gt; () in LoginFirebase.MainViewModel.fetchUser() -&gt; ()"
-                  moduleName = "LoginFirebase"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/joao.santos/Documents/Projects/LoginFirebaseExemple/LoginFirebaseExemple/LoginFirebase/View/Main/ViewModel/MainViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "54"
-                  endingLineNumber = "54"
-                  offsetFromSymbolStart = "307">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -140,8 +108,8 @@
             filePath = "LoginFirebase/View/Main/MainViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
             <Locations>
@@ -181,22 +149,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "D1E8C7B5-093D-4A03-8E70-FEEAFDBA15F0"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "LoginFirebase/View/Login/LoginViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
-            landmarkName = "presentMainView()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "23744C75-BC47-4D9C-B5D7-7AFEBCF0E0AF"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -204,8 +156,8 @@
             filePath = "LoginFirebase/View/Main/MainViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -220,8 +172,8 @@
             filePath = "LoginFirebase/View/Main/MainViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -246,14 +198,14 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "BD34470C-8B04-46AB-85D5-CB7BAE8C4EF5"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LoginFirebase/View/Main/MainViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
             landmarkName = "configureUIWithUser(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -272,6 +224,150 @@
             endingLineNumber = "12"
             landmarkName = "LoginViewModelDelegate"
             landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BE20946D-C25F-4A18-B63E-5173610E8594"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LoginFirebase/View/Registration/RegistrationViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "handleSignUp()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A86D90C2-0573-49BA-929B-D5CDC7A7A271"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LoginFirebase/View/Registration/ViewModel/RegistrationViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "registerUser(_:_:_:_:_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "A86D90C2-0573-49BA-929B-D5CDC7A7A271 - c864d13372ce0954"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LoginFirebase.RegistrationViewModel.registerUser(Swift.String, Swift.String, Swift.String, Swift.String, __C.UIImage) -&gt; ()"
+                  moduleName = "LoginFirebase"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joao.santos/Documents/Projects/LoginFirebaseExemple/LoginFirebaseExemple/LoginFirebase/View/Registration/ViewModel/RegistrationViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "112">
+               </Location>
+               <Location
+                  uuid = "A86D90C2-0573-49BA-929B-D5CDC7A7A271 - 895f0e8712fb2c7a"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;, Swift.Optional&lt;__C.FIRDatabaseReference&gt;) -&gt; () in LoginFirebase.RegistrationViewModel.registerUser(Swift.String, Swift.String, Swift.String, Swift.String, __C.UIImage) -&gt; ()"
+                  moduleName = "LoginFirebase"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joao.santos/Documents/Projects/LoginFirebaseExemple/LoginFirebaseExemple/LoginFirebase/View/Registration/ViewModel/RegistrationViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "175">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9AF920B8-A053-43D5-BEC8-8C12D72591CF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LoginFirebase/View/Registration/ViewModel/RegistrationViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "registerUser(_:_:_:_:_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DCF2E5BD-62A2-4087-927A-DC2AF958C3E9"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LoginFirebase/View/Login/ViewModel/LoginViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "logUserIn(withEmail:password:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4F3DDE90-4D56-43E0-B0F5-EC3988B258A0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LoginFirebase/Service/AuthFirebase.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "resetPassword()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4F3DDE90-4D56-43E0-B0F5-EC3988B258A0 - 133b58428cae63ec"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LoginFirebase.AuthFirebase.resetPassword() -&gt; ()"
+                  moduleName = "LoginFirebase"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joao.santos/Documents/Projects/LoginFirebaseExemple/LoginFirebaseExemple/LoginFirebase/Service/AuthFirebase.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "4F3DDE90-4D56-43E0-B0F5-EC3988B258A0 - 7fff317010e4c390"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in LoginFirebase.AuthFirebase.resetPassword() -&gt; ()"
+                  moduleName = "LoginFirebase"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joao.santos/Documents/Projects/LoginFirebaseExemple/LoginFirebaseExemple/LoginFirebase/Service/AuthFirebase.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "87">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
