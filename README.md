@@ -4,8 +4,8 @@ Um exemplo de uso da ferramenta Firebase para registro e login de usuários, ver
 
 # Tecnologias usadas
 
-Swift 5
-Firebase
-Stevia
-MVVM
-No storyboard
+Swift 5  
+Firebase  
+Stevia  
+MVVM  
+No storyboard  
