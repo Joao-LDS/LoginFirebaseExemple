@@ -16,6 +16,15 @@ class AuthFirebase {
         Auth.auth().signIn(withEmail: email, password: password, completion: completion)
     }
     
+    func signOut() {
+        do {
+            try Auth.auth().signOut()
+            print("Sucess to log out...")
+        } catch let error {
+            print("Failed to sign out with error \(error.localizedDescription)")
+        }
+    }
+    
     func registerUser(_ email: String,_ password: String,_ fullname: String,_ username: String,_ image: UIImage, completion: @escaping (Error?, DatabaseReference?) -> Void) {
         guard let imageData = image.jpegData(compressionQuality: 0.3) else { return }
         let fileName = NSUUID().uuidString
@@ -47,12 +56,12 @@ class AuthFirebase {
         }
     }
     
-    func resetPassword() {
-        Auth.auth().sendPasswordReset(withEmail: "joao_l_d_s@hotmail.com") { error in
-            print("Email enviado")
+    func resetPassword(_ email: String, completion: @escaping(Error?) -> Void) {
+        Auth.auth().sendPasswordReset(withEmail: email) { error in
             if let error = error {
                 print(error.localizedDescription)
             }
+            completion(error)
         }
     }
     

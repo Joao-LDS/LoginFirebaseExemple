@@ -12,6 +12,8 @@ import SDWebImage
 
 class MainViewController: UIViewController {
     
+    // MARK: - Properties
+    
     private let imageView = UIImageView()
     private let stack = UIStackView()
     private let fullnameLabel = UILabel()
@@ -33,9 +35,7 @@ class MainViewController: UIViewController {
         }
     }
     
-    @objc func handleButton() {
-        viewModel.logoutUser()
-    }
+    // MARK: - Functions
     
     func configureActivity(on: Bool) {
         if on {
@@ -48,7 +48,15 @@ class MainViewController: UIViewController {
         }
     }
     
+    // MARK: - Selectors
+    
+    @objc func handleButton() {
+        viewModel.logoutUser()
+    }
+    
 }
+
+// MARK: - MainViewModelDelegate
 
 extension MainViewController: MainViewModelDelegate {
     func configureUIWithUser(_ user: User) {
@@ -71,6 +79,8 @@ extension MainViewController: MainViewModelDelegate {
         }
     }
 }
+
+// MARK: - ViewConfiguration
 
 extension MainViewController: ViewConfiguration {
     func buildView() {

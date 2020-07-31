@@ -34,7 +34,7 @@ extension CustomButtom: ViewConfiguration {
     
     func additionalConfiguration() {
         setTitle(title, for: .normal)
-        backgroundColor = #colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)
+        backgroundColor = #colorLiteral(red: 0.6078431373, green: 0.3647058824, blue: 0.8980392157, alpha: 1)
         layer.cornerRadius = 18
     }
     

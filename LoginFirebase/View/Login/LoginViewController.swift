@@ -15,7 +15,7 @@ class LoginViewController: UIViewController {
     // MARK: - Properties
     
     private let viewModel = LoginViewModel()
-    private let imageView = UIImageView()
+    private let viewBottom = UIView()
     private let emailTextField = UITextField()
     private let passwordTextField = UITextField()
     private let stackView = UIStackView()
@@ -35,7 +35,7 @@ class LoginViewController: UIViewController {
         setupView()
     }
     
-    // MARK: - Functions
+    // MARK: - Selectors
     
     @objc func handleDontHaveAnAccountButton() {
         let vc = RegistrationViewController()
@@ -50,10 +50,13 @@ class LoginViewController: UIViewController {
     }
     
     @objc func handleForgotPassword() {
-        viewModel.resetPassword()
+        let alert = Alert()
+        alert.configureShowAlertWithTextField(view: self.view, title: "Forgot password?", message: "Enter your account email:")
     }
     
 }
+
+// MARK: - LoginViewModelDelegate
 
 extension LoginViewController: LoginViewModelDelegate {
     func presentMainView() {
@@ -63,11 +66,11 @@ extension LoginViewController: LoginViewModelDelegate {
     }
     
     func showAlert(title: String, message: String) {
-        alert.labelTitle.text = title
-        alert.labelMessage.text = message
-        alert.configureShowAlert(view: self.view)
+        alert.configureShowAlert(view: self.view, title: title, message: message)
     }
 }
+
+// MARK: - ViewConfiguration
 
 extension LoginViewController: ViewConfiguration {
     func buildView() {
@@ -75,7 +78,7 @@ extension LoginViewController: ViewConfiguration {
         stackView.addArrangedSubview(passwordView)
         stackView.addArrangedSubview(signInButton)
         view.sv(
-            imageView,
+            viewBottom,
             stackView,
             forgotPassword,
             dontHaveAnAccountButton
@@ -84,24 +87,30 @@ extension LoginViewController: ViewConfiguration {
     
     func addConstraint() {
         view.layout(
-            imageView.fillContainer(),
+            viewBottom.bottom(-20).right(0).left(0).height(25%),
             "",
             |-26-stackView.width(<=300).centerInContainer()-26-|,
             "",
-            forgotPassword.centerHorizontally(),
+            forgotPassword.centerHorizontally().height(40),
             12,
-            dontHaveAnAccountButton.height(50).bottom(8%).centerHorizontally()
+            dontHaveAnAccountButton.height(40),
+            alignCenter(dontHaveAnAccountButton, with: viewBottom)
         )
     }
     
     func additionalConfiguration() {
-        view.backgroundColor = .white
+        view.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+        viewBottom.backgroundColor = #colorLiteral(red: 0.6078431373, green: 0.3647058824, blue: 0.8980392157, alpha: 1)
+        viewBottom.layer.cornerRadius = 20
+        viewBottom.layer.shadowColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        viewBottom.layer.shadowRadius = 8.0
+        viewBottom.layer.shadowOpacity = 0.7
+        viewBottom.layer.shadowOffset = .zero
+        emailTextField.keyboardType = .emailAddress
         stackView.axis = .vertical
         stackView.spacing = 10
         stackView.distribution = .fillEqually
         signInButton.addTarget(self, action: #selector(handleSignIn), for: .touchUpInside)
-        imageView.image = #imageLiteral(resourceName: "photo-of-abstract-painting-2693200")
-        imageView.contentMode = .scaleAspectFill
         forgotPassword.setTitle("Forgot password?", for: .normal)
         forgotPassword.addTarget(self, action: #selector(handleForgotPassword), for: .touchUpInside)
         dontHaveAnAccountButton.setTitle("Don't have an account? Sign In", for: .normal)

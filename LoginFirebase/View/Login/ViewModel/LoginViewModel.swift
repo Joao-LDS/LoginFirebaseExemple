@@ -15,26 +15,22 @@ protocol LoginViewModelDelegate {
 
 class LoginViewModel {
     
-    static let shared = LoginViewModel()
-    
     var delegate: LoginViewModelDelegate?
+    let auth = AuthFirebase()
     
     func logUserIn(withEmail email: String, password: String) {
-        AuthFirebase().logUserIn(withEmail: email, password: password) { result, error in
+        auth.logUserIn(withEmail: email, password: password) { result, error in
             if result?.user.isEmailVerified == false {
                 self.delegate?.showAlert(title: "Error", message: "Your email is not verified.")
+                self.auth.signOut()
                 return
-            }
-            if let error = error {
+            } else if let error = error {
                 print("ERROR: \(error.localizedDescription)")
                 self.delegate?.showAlert(title: "Error", message: error.localizedDescription)
+                self.auth.signOut()
                 return
             }
             self.delegate?.presentMainView()
         }
-    }
-    
-    func resetPassword() {
-        AuthFirebase().resetPassword()
     }
 }

@@ -12,8 +12,10 @@ import Firebase
 
 class RegistrationViewController: UIViewController {
     
+    // MARK: - Properties
+    
     private var viewModel = RegistrationViewModel()
-    private let imageView = UIImageView()
+    private let viewBottom = UIView()
     private let imagePicker = UIImagePickerController()
     private let addPhotoButton = UIButton()
     private var profileImage: UIImage?
@@ -44,6 +46,16 @@ class RegistrationViewController: UIViewController {
     
     // MARK: - Functions
     
+    func setImageButtonFromPicker(_ image: UIImage) {
+        addPhotoButton.setImage(image.withRenderingMode(.alwaysOriginal), for: .normal)
+        addPhotoButton.layer.cornerRadius = 18
+        addPhotoButton.layer.masksToBounds = true
+        addPhotoButton.layer.borderColor = #colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)
+        addPhotoButton.layer.borderWidth = 2
+    }
+    
+    // MARK: - Selectors
+    
     @objc func handleAddPhoto() {
         present(imagePicker, animated: true, completion: nil)
     }
@@ -62,15 +74,9 @@ class RegistrationViewController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
-    func setImageButtonFromPicker(_ image: UIImage) {
-        addPhotoButton.setImage(image.withRenderingMode(.alwaysOriginal), for: .normal)
-        addPhotoButton.layer.cornerRadius = 18
-        addPhotoButton.layer.masksToBounds = true
-        addPhotoButton.layer.borderColor = #colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)
-        addPhotoButton.layer.borderWidth = 2
-    }
-    
 }
+
+// MARK: - UIImagePickerControllerDelegate, UINavigationControllerDelegate
 
 extension RegistrationViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
@@ -81,11 +87,11 @@ extension RegistrationViewController: UIImagePickerControllerDelegate, UINavigat
     }
 }
 
+// MARK: - RegistrationViewModelDelegate
+
 extension RegistrationViewController: RegistrationViewModelDelegate {
     func showAlert(title: String, message: String) {
-        alert.labelTitle.text = title
-        alert.labelMessage.text = message
-        alert.configureShowAlert(view: self.view)
+        alert.configureShowAlert(view: self.view, title: title, message: message)
     }
     
     func configureActivity(on: Bool) {
@@ -112,6 +118,8 @@ extension RegistrationViewController: RegistrationViewModelDelegate {
     }
 }
 
+// MARK: - ViewConfiguration
+
 extension RegistrationViewController: ViewConfiguration {
     func buildView() {
         stackView.addArrangedSubview(emailView)
@@ -120,7 +128,7 @@ extension RegistrationViewController: ViewConfiguration {
         stackView.addArrangedSubview(usernameView)
         stackView.addArrangedSubview(buttonSignUp)
         view.sv(
-            imageView,
+            viewBottom,
             addPhotoButton,
             stackView,
             alreadyHaveAnAccountButton
@@ -128,25 +136,30 @@ extension RegistrationViewController: ViewConfiguration {
     }
     
     func addConstraint() {
+        
         view.layout(
-            imageView.fillContainer(),
-            "",
             addPhotoButton.centerHorizontally().size(150),
-            40,
-            |-26-stackView.width(<=300).centerInContainer()-26-|,
             30,
-            buttonSignUp.centerHorizontally(),
+            |-26-stackView.width(<=300).centerVertically(30).centerHorizontally()-26-|,
             "",
-            alreadyHaveAnAccountButton.bottom(8%).centerHorizontally()
+            viewBottom.bottom(-10).right(0).left(0).height(20%),
+//            alreadyHaveAnAccountButton.bottom(8%).centerHorizontally()
+            alignCenter(alreadyHaveAnAccountButton, with: viewBottom)
         )
+        
     }
     
     func additionalConfiguration() {
-        view.backgroundColor = .white
-        imageView.image = #imageLiteral(resourceName: "photo-of-abstract-painting-2693200")
-        imageView.contentMode = .scaleAspectFill
+        view.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+        viewBottom.backgroundColor = #colorLiteral(red: 0.6078431373, green: 0.3647058824, blue: 0.8980392157, alpha: 1)
+        viewBottom.layer.cornerRadius = 20
+        viewBottom.layer.shadowColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        viewBottom.layer.shadowRadius = 8.0
+        viewBottom.layer.shadowOpacity = 0.7
+        viewBottom.layer.shadowOffset = .zero
         addPhotoButton.addTarget(self, action: #selector(handleAddPhoto), for: .touchUpInside)
         addPhotoButton.setImage(UIImage(named: "plus_photo"), for: .normal)
+        emailTextField.keyboardType = .emailAddress
         stackView.axis = .vertical
         stackView.distribution = .fillEqually
         stackView.spacing = 10

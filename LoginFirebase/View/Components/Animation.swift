@@ -13,7 +13,7 @@ class Animation {
         view.transform = CGAffineTransform(scaleX: 1.3, y: 1.3)
         view.alpha = 0
         UIView.animate(withDuration: 0.3) {
-            view.alpha = 0.8
+            view.alpha = 1
             view.transform = CGAffineTransform.identity
         }
     }

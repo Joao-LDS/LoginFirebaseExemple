@@ -35,12 +35,9 @@ class MainViewModel {
     }
     
     func logoutUser() {
-        do {
-            try Auth.auth().signOut()
-            print("Sucess to log out...")
+        AuthFirebase().signOut()
+        if Auth.auth().currentUser == nil {
             delegate?.presentLogInView()
-        } catch let error {
-            print("Failed to sign out with error \(error.localizedDescription)")
         }
     }
     
